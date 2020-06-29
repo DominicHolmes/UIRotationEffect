@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 13, *)
 struct UIRotationView<Content: View>: UIViewRepresentable {
     let content: UIView
     let angle: Angle
@@ -33,6 +34,7 @@ struct UIRotationView<Content: View>: UIViewRepresentable {
     }
 }
 
+@available(iOS 13, *)
 struct UIRotationViewModifier: ViewModifier {
     let angle: Angle
     let duration: TimeInterval?
@@ -46,6 +48,7 @@ struct UIRotationViewModifier: ViewModifier {
     }
 }
 
+@available(iOS 13, *)
 public extension View {
     func uiRotationEffect(_ angle: Angle, duration: TimeInterval? = nil, delay: TimeInterval? = nil, options: UIView.AnimationOptions? = nil, completion: ((Bool) -> Void)? = nil) -> some View {
         self.modifier(UIRotationViewModifier(angle: angle, duration: duration, delay: delay, options: options, completion: completion))
@@ -53,6 +56,7 @@ public extension View {
 }
 
 // Example
+@available(iOS 13, *)
 struct UIRotationView_Previews: PreviewProvider {
     
     static var previews: some View {
