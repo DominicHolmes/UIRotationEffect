@@ -1,10 +1,19 @@
 # UIRotationEffect
 
+## Explanation
+
 As of iOS 13.5, SwiftUI's `rotationEffect` modifier takes the "long way around" when animating changes in rotation. For example, a rotation from 350° to 20° will cover 330° of rotation, even though those angles have only 30° of separation.
 
 UIKit's animation libraries handle this situation correctly. This Swift Package is a simple wrapper, accessible by modifier, that adds this UIKit rotation behavior to your UIKit view.
 
 ![](example.gif)
+
+## Installation
+UIRotationEffect supports Swift Package Manager. Simply add this url in *XCode > File > Swift Packages > Add Package Dependency*:
+
+```
+https://github.com/DominicHolmes/UIRotationEffect
+```
 
 ## Usage
 Import `UIRotationEffect` into your project. Then use `.uiRotationEffect(angle)` wherever you would normally use `.rotationEffect(angle)`.
