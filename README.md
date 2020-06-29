@@ -1,5 +1,7 @@
 # UIRotationEffect
 
+Credit: [@alonsoholmes](https://github.com/holmesal) for most of this solution.
+
 ## Explanation
 
 As of iOS 13.5, SwiftUI's `rotationEffect` modifier takes the "long way around" when animating changes in rotation. For example, a rotation from 350° to 20° will cover 330° of rotation, even though those angles have only 30° of separation.
