@@ -4,6 +4,8 @@ As of iOS 13.5, SwiftUI's `rotationEffect` modifier takes the "long way around" 
 
 UIKit's animation libraries handle this situation correctly. This Swift Package is a simple wrapper, accessible by modifier, that adds this UIKit rotation behavior to your UIKit view.
 
+![](example.gif)
+
 #### Known Issues (Ideas Welcome)
 * Using this modifier with a very large (~1200x1200) SwiftUI view produces visual glitches.
 * Explicit frames are required, otherwise the view takes up all available space.
